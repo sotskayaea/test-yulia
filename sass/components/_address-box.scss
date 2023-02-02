@@ -1,0 +1,38 @@
+.address-box {
+    margin-right: 93px;
+}
+
+.address-box__item:not(:last-child) {
+    margin-bottom: 8px;
+    
+        @media screen and (min-width: 1200px) {
+            margin-bottom: 9px;
+        }
+}
+
+.address-box__link {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--white-color);
+
+    transition: color 250ms var(--time);
+
+    &:hover,
+    &:focus {
+            color: var(--blue-color);
+        }
+}
+
+
+.address-box__link--alpha {
+    color: rgba(255, 255, 255, 0.6);
+
+    &:hover,
+    &:focus {
+            color: var(--blue-color);
+        }
+}
+

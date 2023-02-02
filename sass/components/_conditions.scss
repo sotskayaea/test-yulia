@@ -1,0 +1,39 @@
+.conditions {
+    display: flex;
+    margin-bottom: 30px;
+
+}
+
+.conditions__label {
+    color: var(--secondary-text-color);
+    cursor: pointer;
+
+}
+
+.conditions__input {
+    appearance: none;
+
+    &:checked+.conditions__label .conditions__checkbox {
+            fill: var(--white-color);
+            background-color: var(--blue-color);
+            border-color: var(--blue-color);
+    
+        }
+}
+
+.conditions__checkbox {
+    fill: transparent;
+    border: 2px solid var(--primary-text-color);
+    border-radius: 4px;
+    margin-right: 8px;
+    margin-left: 10px;
+    ;
+
+    transition: fill 250ms var(--time), background-color 250ms var(--time), border-color 250ms var(--time);
+}
+
+
+.conditions__link {
+    text-decoration: underline;
+    color: var(--blue-color);
+}

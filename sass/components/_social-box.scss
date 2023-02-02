@@ -1,0 +1,24 @@
+.social-box {
+    margin-bottom: 60px;
+    
+        // margin-right: auto;
+        @media screen and (min-width: 1200px) {
+            margin-bottom: 0;
+        }
+}
+
+.social-box__txt {
+    display: block;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--white-color);
+    margin-bottom: 20px;
+
+    @media screen and (min-width: 1200px) {
+            text-align: start;
+            line-height: 1.14;
+        }
+}

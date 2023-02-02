@@ -1,0 +1,19 @@
+img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    color: var(--primary-text-color);
+    background-color: var(--main-background-color);
+}
+
+button {
+    cursor: pointer;
+    font-family: inherit;
+    border: none;
+    border-radius: 4px;
+}

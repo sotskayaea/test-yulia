@@ -1,0 +1,36 @@
+.about {
+    display: none;
+    padding-top: 0;
+    
+        @media screen and (min-width: 1200px) {
+            display: block;
+            padding-bottom: 94px;
+            align-items: center;
+        }
+}
+
+.about__list {
+    display: flex;
+    gap: 30px;
+}
+
+.about__item {
+    position: relative;
+}
+
+.about__txt {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 70px;
+    font-weight: 700;
+    line-height: 1.172;
+    text-transform: uppercase;
+    color: var(--white-color);
+    background-color: rgba(47, 48, 58, 0.8);
+}
