@@ -1,33 +1,122 @@
-.mob-menu {}
+.mob-menu {
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--white-color);
+    padding-top: 48px;
+    padding-bottom: 48px;
+}
 
-.mob-menu__container  {}
+.mob-menu__close {
+    display: block;
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    background-color: transparent;
+    
+    &:hover,
+    &:focus {
+            fill: var(--blue-color);
+        }
+}
 
-.mob-menu__btn {}
+.mob-menu> .container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: auto;
+}
 
-.menu-open-icon {
+
+.mob-menu-list {
+ margin-top: 8px;
+}
+
+.mob-menu-list__item:not(:last-child) {
+    margin-bottom: 32px;
 
 }
 
-.menu-open {
-   
+.mob-menu-list__link {
+    font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 40px;
+        line-height: 47px;
+        letter-spacing: 0.02em;
+    
+        color: #212121;
+    
+    &:hover,
+    &:focus {
+            color: var(--blue-color);
+        }
+
+}
+
+.mob-connect {
+
+}
+
+.mob-connect__list {
+    margin-bottom: 64px;
+}
+
+.mob-connect__item:not(:last-child) {
+    margin-bottom: 32px;
+}
+
+.mob-connect__link {
+font-style: normal;
+font-weight: 500;
+font-size: 24px;
+line-height: 28px;
+letter-spacing: 0.02em;
+
+color: #757575;
+
+&:hover,
+&:focus {
+        color: var(--blue-color);
+    }
+}
+
+.mob-soc {
+ display: flex;
+ 
+}
+
+.mob-soc__item:not(:last-child) {
+    margin-right: 10px;
+    padding-right: 10px;
+    position: relative;
+
+}
+
+ .mob-soc__item:not(:last-child)::after {
+     content: '';
+     display: block;
+     position: absolute;
+     top: 0;
+     right: 0;
+     width: 1px;
+     height: 100%;
+     background-color:#757575;
+ }
+
+.mob-soc__link {
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 22px;
+letter-spacing: 0.02em;
+
+color: #2196F3;
+}
+
+.mob-soc__link::after {
     
 }
-.mob-menu__btn-icon {}
-
-.mob-menu__nav {}
-
-.mob-menu__nav-item {}
-
-.mob-menu__link {}
-
-.mob-menu__contacts {}
-
-.mob-menu__contacts-item {}
-
-.mob-menu__contacts-link {}
-
-.mob-menu__socials {}
-
-.mob-menu__socials-item {}
-
-.mob-menu__socials-link {}
