@@ -7,6 +7,9 @@
     background-color: var(--white-color);
     padding-top: 48px;
     padding-bottom: 48px;
+    @media screen and (min-width: 768px) {
+            display: none;
+        }
 }
 
 .mob-menu__close {
@@ -54,10 +57,6 @@
     &:focus {
             color: var(--blue-color);
         }
-
-}
-
-.mob-connect {
 
 }
 
@@ -115,8 +114,4 @@ line-height: 22px;
 letter-spacing: 0.02em;
 
 color: #2196F3;
-}
-
-.mob-soc__link::after {
-    
 }

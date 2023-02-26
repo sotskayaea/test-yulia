@@ -24,6 +24,12 @@
   margin: -1px;
 }
 
+.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
 img {
   display: block;
   width: 100%;
@@ -186,6 +192,9 @@ p {
   padding: 0;
   background-color: transparent;
   border-color: transparent;
+}
+.header__button:hover, .header__button:focus {
+  fill: var(--blue-color);
 }
 @media screen and (min-width: 768px) {
   .header__button {
@@ -1406,6 +1415,11 @@ p {
   background-color: var(--white-color);
   padding-top: 48px;
   padding-bottom: 48px;
+}
+@media screen and (min-width: 768px) {
+  .mob-menu {
+    display: none;
+  }
 }
 
 .mob-menu__close {
