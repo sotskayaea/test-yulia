@@ -19,11 +19,13 @@
         <div class="container header__container">
             <nav class="nav">
                 <a class="logo header__logo" href="./index.html">Web<span class="logo__txt">Studio</span></a>
+                <div class="nav__box">
                 <ul class="list nav__list">
                     <li class="nav__item"><a class="nav__link nav__link--current" href="./index.html">Студія</a></li>
                     <li class="nav__item"><a class="nav__link" href="./portfolio.html">Портфоліо</a></li>
                     <li class="nav__item"><a class="nav__link" href="#">Kонтакти</a></li>
                 </ul>
+                </div>
             </nav>
             <ul class="list header__contacts-list">
                 <li class="header__contacts-item">
@@ -38,36 +40,41 @@
                         </svg>+38 096 111 11 11</a>
                 </li>
             </ul>
+            <button type="button" class="header__button">
+                <svg class="menu-open-icon" width="40" height="40"><use href="./images/symbol-defs.svg#icon-menu_40px"></use></svg>
+            </button>
         </div>
-        <!-- <div class="mob-menu">
-            <div class="mob-menu__top">
-            <button class="header-close" type="button">
-                <svg width="40" height="40"><use hfer="./images/symbol-defs.svg#icon-mobile-close"></use></svg>
+        <!-- <div class="mob-menu is-hidden">
+            <div class="mob-menu__container">
+                <div class="mob-menu__top">
+            <button class="mob-menu__btn" type="button">
+                <svg class="mob-menu__btn-icon" width="40" height="40"><use href="./images/symbol-defs.svg#icon-mobile-close"></use></svg>
             </button>
             <ul class="list mob-menu__nav">
-                <li><a href="./index.html">Студія</a></li>
-                <li><a href="./portfolio.html">Портфоліо</a></li>
-                <li><a href="#">Kонтакти</a></li>
+                <li class="mob-menu__nav-item"><a class="mob-menu__link" href="./index.html">Студія</a></li>
+                <li class="mob-menu__nav-item"><a class="mob-menu__link" href="./portfolio.html">Портфоліо</a></li>
+                <li class="mob-menu__nav-item"><a class="mob-menu__link" href="#">Kонтакти</a></li>
             </ul>
-            </div>
-            <div class="mob-menu__bottom">
+                </div>
+                <div class="mob-menu__bottom">
                 <ul class="list mob-menu__contacts">
-                    <li class="">
-                        <a class="" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                    <li class="mob-menu__contacts-item">
+                        <a class="mob-menu__contacts-link" href="mailto:info@devstudio.com">info@devstudio.com</a>
                     </li>
-                    <li class="">
-                    <a class="" href="tel:+380961111111">+38 096 111 11 11</a>
+                    <li class="mob-menu__contacts-item">
+                    <a class="mob-menu__contacts-link" href="tel:+380961111111">+38 096 111 11 11</a>
                 </ul>
-                <ul class="list">
-                    <li><a href="#">Instagram</a></li>
-                    <li><a href="#">Twitter</a></li>
-                    <li><a href="#">Facebook</a></li>
-                    <li><a href="#">LinkedIn</a></li>
+                <ul class="list mob-menu__socials">
+                    <li class="mob-menu__socials-item"><a class="mob-menu__socials-link" href="#">Instagram</a></li>
+                    <li class="mob-menu__socials-item"><a class="mob-menu__socials-link" href="#">Twitter</a></li>
+                    <li class="mob-menu__socials-item"><a class="mob-menu__socials-link" href="#">Facebook</a></li>
+                    <li class="mob-menu__socials-item"><a class="mob-menu__socials-link" href="#">LinkedIn</a></li>
                 </ul>
+                </div>
             </div>
 
-        </div>
-         -->
+        </div> -->
+        
     </header>
     <main>
         <!-- <section class="hero">
@@ -76,32 +83,40 @@
                 <button class="button hero__button" type="button" data-modal-open>Замовити послугу</button>
             </div>
         </section> -->
-        <!-- <section class="features">
+        <section class="features">
             <div class="container">
                 <h2 class="secondary-title visually-hidden">Наші переваги</h2>
                 <ul class="list features__list">
                     <li class="features__item atenna-svg">
-                        <svg class="features__icon" width="70" height="70"><use href="./images/symbol-defs.svg#icon-antenna"></use></svg>
+                        <div class="features__icon">
+                        <svg width="70" height="70"><use href="./images/symbol-defs.svg#icon-antenna"></use></svg>
+                        </div>
                         <h3 class="features__title">Увага до деталей</h3>
                         <p class="features__subtitle">Ідейні міркування, і навіть початок повсякденної роботи з
                             формування
                             позиції.</p>
                     </li>
                     <li class="features__item clock-svg">
-                        <svg class="features__icon" width="70" height="70"><use href="./images/symbol-defs.svg#icon-clock"></use></svg>
+                        <div class="features__icon">
+                        <svg width="70" height="70"><use href="./images/symbol-defs.svg#icon-clock"></use></svg>
+                        </div>
                         <h3 class="features__title">Пунктуальність</h3>
                         <p class="features__subtitle">Завдання організації, особливо рамки і місце навчання кадрів
                             тягне у себе.
                         </p>
                     </li>
                     <li class="features__item diagram-svg">
-                        <svg class="features__icon" width="70" height="70"><use href="./images/symbol-defs.svg#icon-diagram"></use></svg>
+                        <div class="features__icon">
+                        <svg  width="70" height="70"><use href="./images/symbol-defs.svg#icon-diagram"></use></svg>
+                        </div>
                         <h3 class="features__title">Планування</h3>
                         <p class="features__subtitle">Так само консультація з широким активом значною мірою зумовлює.
                         </p>
                     </li>
                     <li class="features__item astronaut-svg">
-                        <svg class="features__icon" width="70" height="70"><use href="./images/symbol-defs.svg#icon-astronaut"></use></svg>
+                        <div class="features__icon">
+                        <svg  width="70" height="70"><use href="./images/symbol-defs.svg#icon-astronaut"></use></svg>
+                        </div>
                         <h3 class="features__title">Сучасні технології</h3>
                         <p class="features__subtitle">Значимість цих проблем настільки очевидна, що реалізація
                             планових завдань.
@@ -109,7 +124,7 @@
                     </li>
                 </ul>
             </div>
-        </section> -->
+        </section>
         <section class="about">
             <div class="container">
                 <h2 class="secondary-title">Чим ми займаємося</h2>

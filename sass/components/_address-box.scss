@@ -1,7 +1,22 @@
 .address-box {
-    margin-right: 93px;
-}
+    // margin-right: 93px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 60px;
+        
+            @media screen and (min-width: 1200px) {
+                align-items: flex-start;
+            }
+        }
+    
+.address-box__item {
+    text-align: center;
 
+    @media screen and (min-width: 1200px) {
+        text-align: start;
+    }
+}
 .address-box__item:not(:last-child) {
     margin-bottom: 8px;
     

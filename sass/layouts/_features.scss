@@ -1,60 +1,42 @@
+
 .features {
-    // padding: 94px 0;
-   
-    
-}
-.features> .container {
-    @media screen and (min-width: 480px) {
-        width: 450px;
-    }
-
-    @media screen and (min-width: 768px) {
-        width: 738px;
-    }
-
-    @media screen and (min-width: 1200px) {
-        width: 1200px; 
-    }
+    padding: 94px 0;
 }
 
 .features__list {
-    // display: flex;
-    // flex-wrap: wrap;
+    display: flex;
+    flex-direction: column;
     gap: 30px;
-    align-items: center;
 
     @media screen and (min-width: 768px) {
-        display: flex;
-        width: calc((100 - 60) / 2);
-    }
+           flex-direction: row;
+           flex-wrap: wrap;
+        }
     
-    @media screen and (min-width: 768px) {
-        display: flex;
-        width: calc((100 - 90) / 4);
-    }
-}
-
-.features__item {
-    display: block;
-    
+        @media screen and (min-width: 1200px) {
+            width: 270px;
+            flex-direction: row;
+            flex-wrap: nowrap;
+        }
 }
 
 .features__icon {
-    background-color:#F5F4FA;
+    display: flex;
+    background-color: #F5F4FA;
     width: 450px;
     height: 120px;
-    background-position: center;
     border-radius: 4px;
-    background-repeat: no-repeat;
+    align-items: center;
+    justify-content: center;
     margin-bottom: 30px;
 
-        @media screen and (min-width: 768px) {
-            width: 354px;
-            }
+    @media screen and (min-width: 768px) {
+        width: 354px;
+    }
 
-        @media screen and (min-width: 1200px) {
-            width: 270px;
-        }
+    @media screen and (min-width: 1200px) {
+        width: 270px;
+    }
 }
 
 .features__title {
@@ -64,6 +46,26 @@
     text-transform: uppercase;
     color: var(--primary-text-color);
     margin-bottom: 10px;
+}
+
+.features__subtitle {
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--secondary-text-color);
+}
+
+.features__title {
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--primary-text-color);
+    margin-bottom: 10px;
+    text-align: center;
+    @media screen and (min-width: 768px) {
+            text-align: start;
+        }
 
 }
 
@@ -72,6 +74,14 @@
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: var(--secondary-text-color);
+
+    @media screen and (min-width: 768px) {
+            max-width: 354px;
+        }
+    
+        @media screen and (min-width: 1200px) {
+            max-width: 270px;
+        }
 }
 
 

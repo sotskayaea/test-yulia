@@ -5,6 +5,15 @@
     margin-right: auto;
 }
 
+
+.nav__box {
+    display: none;
+
+    @media screen and (min-width: 768px) {
+        display: block;
+    }
+}
+
 .nav__item:not(:last-child) {
     margin-right: 50px;
     margin-left: 0px;
